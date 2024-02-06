@@ -1,0 +1,95 @@
+*, *::before, *::after { box-sizing: border-box; }
+body {
+	margin: 0;
+	padding: 20px 20px 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-size: 2.4rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333;
+	margin: 0;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #bababa;
+	padding-bottom: .5rem;
+}
+p {
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin: 0;
+	margin-bottom: .8rem;
+}
+.price {
+	color: #d13030;
+	font-size: 1.8rem;
+}
+.free-shipping {
+	font-weight: 700;
+	white-space: nowrap;
+}
+.color-swatches {
+	margin-bottom: 1.5rem;
+	display: flex;
+}
+.swatch {
+	border: 1px solid #bbb;
+	font-size: .85rem;
+	flex-basis: 25%;
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #666;
+	text-align: center;
+}
+.swatch:not(:last-child) {
+	margin-right: 10px;
+}
+.swatch#beige {
+	background-color: #e7d8ba;
+}
+.swatch#yellow {
+	background-color: #fad88d;
+}
+.swatch#blue {
+	background-color: #8ee3f2;
+}
+.swatch#red {
+	background-color: #ef8989;
+}
+#product-photo {
+	width: 100%;
+	box-shadow: 0 16px 20px 0 #bfbfbf;
+}
+.selected {
+	border-color: #000;
+}
+@media (min-width: 400px) {
+	.swatch {
+		font-size: 1rem;
+	}
+	.swatch:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+@media (min-width: 900px) {
+	body {
+		padding: 40px;
+		max-width: 1100px;
+		margin: auto;
+	}
+	h1 {
+		font-size: 2.7rem;
+	}
+	main {
+		display: flex;
+	}
+	.col {
+		flex-basis: 48%;
+	}
+	.photo {
+		order: -1;
+		margin-right: 40px;
+	}
+}

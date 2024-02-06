@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Color Selector</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>	
+	
+<body>
+
+	<main>
+		<div class="col info">
+			<h1>Molded Chair</h1>
+			<p>A modern classic, this molded plastic chair is guaranteed to enhance the look and feel of any home.</p>
+			<p>
+				<span class="price">$89.99</span>
+				<span class="free-shipping">+ FREE Shipping</span>
+			</p>
+			<p class="choose-color">Choose a Color:</p>
+			<div class="color-swatches">
+				<button class="swatch selected" id="beige" >Beige</button>
+				<button class="swatch" id="yellow"name="1">Yellow</button>
+				<button class="swatch" id="blue"name="2">Blue</button>
+				<button class="swatch" id="red"name="3">Red</button>
+				<!--<button class="swatch" id="showname" onclick="displayName()">showname</button> -->
+
+			</div>
+		</div>
+		<div class="col photo">
+			<img id="product-photo" src="img/chair-beige.jpg">
+		</div>
+	</main>
+
+	<script src="js/product-chooser.js">
+		// all below has been imported no from product-chooser.js
+		
+
+        // const productPhoto = document.getElementById('product-photo');
+        // const priceSpan = document.querySelector('.price');
+        // // use querySelectorAll() to get ALL the buttons; the result is an array of DOM elems 
+        // const btnsArr = document.querySelectorAll('.color-swatches button');
+		// // loop btnsArr, assigning click event listener to each btn; in this way we make each btn call the func:
+		// for(let i = 0; i< btnsArr.length; i++){
+		// 	// btnsArr[i].addEventListener('click', changeColor)
+		// 	btnsArr[i].addEventListener('mouseover', changeColor)
+		// }
+        // const prices = ["$49.50", "$79.88", "$67.25", "$110", '$12.99', '$123.66', '$56.50', '$33.23', '$99.22', '$69.59'];
+
+        // function changeColor() {
+        // productPhoto.src = "img/chair-" + this.id + ".jpg";
+        // let r = Math.floor(Math.random() * prices.length);
+        // priceSpan.textContent = prices[r];
+        // }
+
+
+		
+		
+ 	</script>
+
+	
+	
+</body>
+</html>
